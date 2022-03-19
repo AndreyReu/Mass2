@@ -15,6 +15,7 @@ public class Main {
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         // Задание №1
+
         int[] arr = new int[30];
         double sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -24,6 +25,7 @@ public class Main {
                 System.out.println("Сумма трат за месяц составила " + sum + " рублей");
             }
         }
+
         // Задание №2
         int minSum = 100000;
         int maxSum = -1;
@@ -36,6 +38,7 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей." + " Максимальная сумма трат за день составила " + maxSum + " рублей");
+
         //Задание №3
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
@@ -49,6 +52,7 @@ public class Main {
     }
 
     public static void task1() {
+
         // Задание №4
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
